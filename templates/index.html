@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <h2><strong>Favorite Fruites</strong></h2>
+
+  {% for fruit in python_list %}<br>
+    {% if fruit == 45 %}
+        {{fruit + 5}}<br>
+    {% else %}
+        {{first_name}}
+    {% endif %}
+
+
+
+
+  {% endfor %}
+
+  <br>
+
+  {{ python_list.0 }}<br>
+  {{ python_list.1 }}<br>
+  {{ python_list.2 }}<br>
+  {{ python_list.3 }}<br>
+  {{ python_list.4 }}<br>
+
+  {{ python_list.4 | reverse }}
+
+{% endblock %}
