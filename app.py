@@ -5,12 +5,13 @@ from wtforms.validators import DataRequired
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
+
 app = Flask(__name__)
 # Add Database
 #Old SQLite Database config
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 #New MySql Database config
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:8349458001@localhost/our_users'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymql://root:123456789@localhost/our_users'
 # Secret Key!
 app.config['SECRET_KEY'] = "Secret Key"
 # Initialize The Database
