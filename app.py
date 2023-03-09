@@ -11,7 +11,7 @@ app = Flask(__name__)
 #Old SQLite Database config
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 #New MySql Database config
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymql://root:123456789@localhost/our_users'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user.db'
 # Secret Key!
 app.config['SECRET_KEY'] = "Secret Key"
 # Initialize The Database
