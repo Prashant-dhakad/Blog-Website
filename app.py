@@ -9,7 +9,7 @@ from datetime import datetime
 app = Flask(__name__)
 # Add Database
 #Old SQLite Database config
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql:///root:password12345@localhost/our_users.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql:///root:12345678@localhost:3306/our_users.db'
 #New MySql Database config
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user.db'
 # Secret Key!
